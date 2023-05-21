@@ -5,7 +5,7 @@ const StylelintWebpackPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV || 'production',
-  entry: './src/script.tsx',
+  entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[contenthash].js',
@@ -20,11 +20,17 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from js strings
           'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
-          // Compiles Sass to CSS
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                auto: (resPath) => Boolean(resPath.includes('.module.')),
+                localIdentName: "[path][name]__local--[hash:base64:5]"
+              },
+
+            }
+          },
           'sass-loader',
         ]
       },
@@ -44,7 +50,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './public/index.html',
     }),
     new StylelintWebpackPlugin({
       files: '{**/*,*}.scss',
