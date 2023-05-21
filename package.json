@@ -4,8 +4,9 @@
     "build": "webpack",
     "deploy": "gh-pages -d dist",
     "eslint": "eslint --ext .ts,.tsx,.js ./",
-    "prettier": "prettier --write \"{**/*,*}.{tsx,js,ts}\"",
-    "prettier-check": "prettier --check \"{**/*,*}.{tsx,js,ts}\""
+    "prettier": "prettier --write ./",
+    "prettier-check": "prettier --check ./",
+    "stylelint": "stylelint \"src/{**/*,*}.css\""
   },
   "dependencies": {
     "@babel/cli": "^7.21.5",
@@ -18,12 +19,18 @@
     "eslint": "8.22.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react": "^7.32.2",
+    "eslint-webpack-plugin": "^4.0.1",
     "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.1",
+    "pre-commit": "^1.2.2",
     "prettier": "^2.8.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "style-loader": "^3.3.3",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-webpack-plugin": "^4.1.1",
     "webpack": "^5.83.1",
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
@@ -34,5 +41,10 @@
     "@types/react-dom": "^18.2.4",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4"
-  }
+  },
+  "pre-commit": [
+    "stylelint",
+    "eslint",
+    "prettier-check"
+  ]
 }
