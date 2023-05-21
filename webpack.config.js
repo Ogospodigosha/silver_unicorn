@@ -8,7 +8,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.[contenthash].js',
+    filename: '[name].[contenthash].js',
   },
   module: {
     rules: [
@@ -22,17 +22,16 @@ module.exports = {
         use: [
           'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               modules: {
                 auto: (resPath) => Boolean(resPath.includes('.module.')),
-                localIdentName: "[path][name]__local--[hash:base64:5]"
+                localIdentName: '[path][name]__local--[hash:base64:5]',
               },
-
-            }
+            },
           },
           'sass-loader',
-        ]
+        ],
       },
       {
         test: /\.svg$/,
@@ -61,5 +60,6 @@ module.exports = {
   ],
   devServer: {
     open: true,
+    historyApiFallback: true,
   },
 };
