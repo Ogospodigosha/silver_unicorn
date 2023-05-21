@@ -18,8 +18,15 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from js strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ]
       },
       {
         test: /\.svg$/,
@@ -40,7 +47,7 @@ module.exports = {
       template: './src/index.html',
     }),
     new StylelintWebpackPlugin({
-      files: '{**/*,*}.css',
+      files: '{**/*,*}.scss',
     }),
     new EslintWebpackPlugin({
       files: '{**/*,*}.{tsx,js,ts}',

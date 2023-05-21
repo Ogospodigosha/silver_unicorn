@@ -31,7 +31,6 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-webpack-plugin": "^4.1.1",
-    "webpack": "^5.83.1",
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
   },
@@ -39,12 +38,10 @@
   "devDependencies": {
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.2.2",
     "ts-loader": "^9.4.2",
-    "typescript": "^5.0.4"
-  },
-  "pre-commit": [
-    "stylelint",
-    "eslint",
-    "prettier-check"
-  ]
+    "typescript": "^5.0.4",
+    "webpack": "^5.83.1"
+  }
 }

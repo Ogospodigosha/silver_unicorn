@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 export const App = () => {
   return (
     <div style={{ backgroundColor: 'green' }}>
