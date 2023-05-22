@@ -36,7 +36,7 @@
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
   },
-  "homepage": "https://ogospodigosha.github.io/silverUnicorn",
+  "homepage": "https://Ogospodigosha.github.io/silver_unicorn",
   "devDependencies": {
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
