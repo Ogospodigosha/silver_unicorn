@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[858],{858:(e,n,s)=>{s.r(n),s.d(n,{default:()=>c});var u=s(893);const c=function(){return(0,u.jsx)("div",{children:"CATALOG PAGE"})}}}]);
