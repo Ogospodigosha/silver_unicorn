@@ -37,7 +37,6 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
       <div className={cls.headerBottom}>
         <div className={cls.container}>
           <div className={cls.bottomFlex}>
-            {/*<input type="text" className={cls.icon} placeholder={'Поиск'} />*/}
             <Input theme={ThemeInput.SEARCH} placeholder={'Поиск'} />
           </div>
         </div>
