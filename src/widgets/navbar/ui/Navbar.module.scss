@@ -10,26 +10,6 @@
       display: flex;
       justify-content: flex-end;
       height: 50px;
-
-      input {
-        background-color: #af88bd;
-        border-radius: 20px;
-        align-self: center;
-        border: 1px solid  #af88bd;
-        padding: 5px 7px;
-        color: #fff;
-        width: 728px;
-        height: 25px;
-        font-size: 15px;
-        line-height: 18px;
-        outline: none;
-      }
-
-      .icon {
-        padding-left: 35px;
-        background: #af88bd url("shared/assets/icons/iconamoon_search-thin.svg") no-repeat 12px center;
-        background-size: 19px;
-      }
     }
   }
 

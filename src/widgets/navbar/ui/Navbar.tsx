@@ -4,6 +4,7 @@ import { classNames } from 'shared/lib/classNames/ClassNames';
 import cls from './Navbar.module.scss';
 import logo from 'shared/assets/icons/Logo.svg';
 import trash from 'shared/assets/icons/ph_shopping-bag-thin.svg';
+import { Input, ThemeInput } from 'shared/ui/Input/Input';
 
 interface NavbarProps {
   className?: string;
@@ -36,7 +37,8 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
       <div className={cls.headerBottom}>
         <div className={cls.container}>
           <div className={cls.bottomFlex}>
-            <input type="text" className={cls.icon} placeholder={'Поиск'} />
+            {/*<input type="text" className={cls.icon} placeholder={'Поиск'} />*/}
+            <Input theme={ThemeInput.SEARCH} placeholder={'Поиск'} />
           </div>
         </div>
       </div>
