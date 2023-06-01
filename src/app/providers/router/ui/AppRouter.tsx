@@ -6,10 +6,11 @@ import { NewsPage } from 'pages/NewsPage';
 import { TrashPage } from 'pages/TrashPage';
 import { CatalogPage } from 'pages/CatalogPage';
 import { NotFoundPage } from 'pages/NotFoundPage';
+import { PageLoader } from 'shared/ui/PageLoader/PageLoader';
 
 export const AppRouter = () => {
   return (
-    <Suspense fallback={<div>loading</div>}>
+    <Suspense fallback={<PageLoader />}>
       <Routes>
         <Route path={'/trash'} element={<TrashPage />} />
         <Route path={'/news'} element={<NewsPage />} />
