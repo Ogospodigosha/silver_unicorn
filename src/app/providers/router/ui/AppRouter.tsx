@@ -5,6 +5,7 @@ import { MainPage } from 'pages/MainPage';
 import { NewsPage } from 'pages/NewsPage';
 import { TrashPage } from 'pages/TrashPage';
 import { CatalogPage } from 'pages/CatalogPage';
+import { NotFoundPage } from 'pages/NotFoundPage';
 
 export const AppRouter = () => {
   return (
@@ -15,6 +16,7 @@ export const AppRouter = () => {
         <Route path={'/'} element={<MainPage />} />
         <Route path={'/about'} element={<AboutPage />} />
         <Route path={'/catalog'} element={<CatalogPage />} />
+        <Route path={'*'} element={<NotFoundPage />} />
       </Routes>
     </Suspense>
   );
