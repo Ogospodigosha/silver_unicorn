@@ -1,0 +1,48 @@
+.accordion__mainTitle {
+  margin: 0 0 78px 0;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 600;
+}
+
+.wrapper {
+  margin: 0 0 7px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__title {
+  width: 100%;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.toggleOpened {
+  display: block;
+  height: 20px;
+  width: 13px;
+  background-image: url("shared/assets/icons/toggle_opened.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggleClosed {
+  display: block;
+  height: 20px;
+  width: 13px;
+  background-image: url("shared/assets/icons/toggle_closed.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
