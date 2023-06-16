@@ -7,6 +7,8 @@ import { TrashPage } from 'pages/TrashPage';
 import { CatalogPage } from 'pages/CatalogPage';
 import { NotFoundPage } from 'pages/NotFoundPage';
 import { PageLoader } from 'shared/ui/PageLoader/PageLoader';
+import { SignUpPage } from 'pages/SignUpPage/ui/SignUpPage';
+import { LogInPage } from 'pages/LogInPage/ui/LogInPage';
 
 export const AppRouter = () => {
   return (
@@ -17,6 +19,8 @@ export const AppRouter = () => {
         <Route path={'/'} element={<MainPage />} />
         <Route path={'/about'} element={<AboutPage />} />
         <Route path={'/catalog'} element={<CatalogPage />} />
+        <Route path={'/signup'} element={<SignUpPage />} />
+        <Route path={'/login'} element={<LogInPage />} />
         <Route path={'*'} element={<NotFoundPage />} />
       </Routes>
     </Suspense>

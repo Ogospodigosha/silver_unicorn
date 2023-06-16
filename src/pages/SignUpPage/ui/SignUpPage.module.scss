@@ -1,0 +1,86 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+  padding: 103px 101px;
+  width: 767px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 40px;
+}
+
+.closeButton {
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  top: 45px;
+  right: 45px;
+}
+
+.buttonsWrapper {
+  margin: 0 0 70px 0;
+  display: flex;
+  justify-content: space-around;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.button {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+
+.inactive {
+  color: rgba(46, 46, 46, 0.5);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin: 0 0 15px 0;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+  cursor: pointer;
+}
+
+.checkbox {
+  margin: 33px 0 52px 0;
+}
+
+.submitButton {
+  align-self: center;
+  margin: 0 0 70px 0;
+}
+
+.link {
+  align-self: center;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  text-decoration: none;
+  color: rgba(46, 46, 46, 0.5);
+}
+
+.link span {
+  color: rgba(175, 136, 189, 1);
+}

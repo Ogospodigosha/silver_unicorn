@@ -1,0 +1,31 @@
+.closeButton {
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.closeButtonLine {
+  position: absolute;
+  top: -2px;
+  right: 11px;
+  width: 2px;
+  height: 28px;
+  background-color: rgba(46, 46, 46, 1);
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+.closeButtonLine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 28px;
+  background-color: rgba(46, 46, 46, 1);
+  transform: rotate(-90deg);
+  border-radius: 2px;
+}
