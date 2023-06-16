@@ -1,0 +1,58 @@
+.wrapper {
+  margin: 0 0 7px 0;
+  display: flex;
+  align-items: center;
+}
+
+.accordion__title {
+  margin: 0 24px 0 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.toggleOpened {
+  display: block;
+  height: 20px;
+  width: 13px;
+  background-image: url("shared/assets/icons/toggle_opened.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggleClosed {
+  display: block;
+  height: 20px;
+  width: 13px;
+  background-image: url("shared/assets/icons/toggle_closed.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.listItem {
+  margin: 0 0 7px 0;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 300;
+}
