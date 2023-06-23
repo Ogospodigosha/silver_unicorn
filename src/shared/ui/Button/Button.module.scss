@@ -3,14 +3,19 @@
 }
 
 .clear {
-  color: #fff;
+  color: var(--secondary--color);
   font-family: Raleway, sans-serif;
   font-weight: 600;
   font-size: 27px;
   line-height: 31px;
-  background-color: #af88bd;
+  background-color: var(--tertiary-color);
   outline: none;
   border: none;
   padding: 22px 65px;
   border-radius: 100px;
+  transition: var(--transition-base);
+
+  &:hover {
+    background-color: var(---accent-primary-color);
+  }
 }
