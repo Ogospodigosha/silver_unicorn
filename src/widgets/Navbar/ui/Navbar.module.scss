@@ -1,9 +1,9 @@
 .navbar {
   width: 100%;
-  background-color: var(--bg-color);
+  background-color: var(--secondary--color);
 
   .headerBottom {
-    background-color: #d6c6dc;
+    background-color: var(---accent-primary-color);
     height: 50px;
 
     .bottomFlex {
@@ -48,7 +48,7 @@
 }
 
 ::-webkit-input-placeholder {
-  color: #d6c6dc;
+  color: var(---accent-primary-color);
   font-size: 20px;
   //line-height: 1px;
 }
