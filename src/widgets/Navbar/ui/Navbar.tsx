@@ -5,7 +5,7 @@ import cls from './Navbar.module.scss';
 import logo from 'shared/assets/icons/Logo.svg';
 import trash from 'shared/assets/icons/ph_shopping-bag-thin.svg';
 import avatar from 'shared/assets/icons/ph_user.svg';
-
+import heart from 'shared/assets/icons/ph_heart-fill.svg';
 import { Input, ThemeInput } from 'shared/ui/Input/Input';
 
 interface NavbarProps {
@@ -31,12 +31,17 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
               Новости
             </Link>
           </ul>
-          <Link to={'/trash'}>
-            <img src={trash} alt="logo" />
-          </Link>
-          <Link to={'/user'}>
-            <img src={avatar} alt="logo" />
-          </Link>
+          <div className={cls.nav_right}>
+            <Link to={'/'}>
+              <img className={cls.heartImg} src={heart} alt="logo" />
+            </Link>
+            <Link to={'/trash'}>
+              <img src={trash} alt="logo" />
+            </Link>
+            <Link to={'/user'}>
+              <img src={avatar} alt="logo" />
+            </Link>
+          </div>
         </div>
       </div>
       <div className={cls.headerBottom}>

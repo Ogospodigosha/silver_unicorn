@@ -17,6 +17,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
+
+    .nav_right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
 
     .logo {
       padding-top: 5px;

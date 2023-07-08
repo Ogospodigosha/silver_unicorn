@@ -1,11 +1,12 @@
 import React from 'react';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
-
+import { Swiper } from 'widgets/Swiper';
 export const MainPage = () => {
   return (
-    <div>
-      <div>MAIN PAGE1</div>
-      <Button theme={ThemeButton.ClEAR}>Читать</Button>
+    <div className="Main">
+      <div className="container">
+        <Swiper />
+      </div>
     </div>
   );
 };
